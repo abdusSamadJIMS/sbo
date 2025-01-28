@@ -7,7 +7,7 @@ import brightnes from '@/assets/img/brightnes.svg';
 
 const DarkLight = () => {
   const [open, setOpen] = useState<boolean>(false);
-  const [activeMode, setActiveMode] = useState<string>('light'); 
+  const [activeMode, setActiveMode] = useState<string>('light');
 
   useEffect(() => {
     const storedMode = localStorage.getItem('mode');
@@ -38,7 +38,7 @@ const DarkLight = () => {
   return (
     <>
       <div className="cs_toggle">
-        <div className="setting_mode" style={{ right: open ? '120px' : '0px' }}>
+        <div className="setting_mode" style={{ right: open ? '120px' : '0px', height: "3rem", width: "3rem" }}>
           <button id="open" onClick={openDarkLight} style={{ display: open ? 'none' : 'block' }}>
             <Image src={brightnes} alt="icon-here" />
           </button>
