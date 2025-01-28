@@ -28,7 +28,7 @@ const AutoModal = () => {
                 <button
                     onClick={closeModal}
                     className="btn rounded-circle  "
-                    style={{ position: "absolute", right: "2.5rem", color: "var(--accent-color)", borderColor: "var(--accent-color)" }}
+                    style={{ position: "absolute", right: "2.5rem", color: "var(--accent-color)", borderColor: "var(--accent-color)", zIndex: 10000 }}
                 >X</button>
                 <section>
                     <div className="container">
@@ -113,7 +113,7 @@ const styles: Record<string, React.CSSProperties> = {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        zIndex: 10000,
+        zIndex: 2000,
     },
     modal: {
         backgroundColor: 'var(--cr_banner-color)',
