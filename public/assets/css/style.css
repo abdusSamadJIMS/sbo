@@ -3762,11 +3762,13 @@ label {
 }
 
 .cs_site_branding {
-    display: inline-block;
+    display: block;
 }
 
 .cs_site_branding img {
-    max-height: 45px;
+    object-fit: cover;
+    /* max-height: 45px; */
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -3809,6 +3811,7 @@ label {
         display: flex;
         justify-content: center;
         align-items: center;
+        /* position: relative; */
     }
 
     .cs_nav {
@@ -4273,7 +4276,7 @@ label {
 
 @media screen and (max-width: 575px) {
     .cs_site-branding {
-        max-width: 150px;
+        /* max-width: 150px; */
     }
 
     .cs_hamburger_wrap .cs_hamburger {
@@ -4281,7 +4284,7 @@ label {
     }
 
     .cs_site_branding img {
-        max-height: 32px;
+        /* max-height: 32px; */
     }
 
     .cs_site_header.cs_style1 .cs_btn span {
