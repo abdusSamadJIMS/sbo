@@ -14,26 +14,26 @@ const counter_data: DataType[] = [
   {
     id: 1,
     title: `Project Completed`,
-    number: 91,
+    number: 1500,
   },
   {
     id: 2,
     title: `Happy customers`,
-    number: 2,
+    number: 27,
   },
   {
     id: 3,
     title: `Years Experiences`,
-    number: 21,
+    number: 8,
   },
   {
     id: 4,
-    title: `Awards Achievement`,
-    number: 42,
+    title: `Success rate`,
+    number: 96,
   },
 ]
 
-const FunFactHomeOne = ({style_2, style_3} :any) => {
+const FunFactHomeOne = ({ style_2, style_3 }: any) => {
   return (
     <>
       <div className="container">
@@ -45,8 +45,8 @@ const FunFactHomeOne = ({style_2, style_3} :any) => {
                   <div className="amin_auto_count">
                     <Count number={item.number} add_style={true} />
                   </div>
-                  {i === 0 && <span>K</span>}
-                  {i === 1 && <span>K</span>}
+                  {i === 3 && <span>%</span>}
+                  {i === 1 && <span></span>}
                 </div>
                 <div className={`cs_funfact_text cs_primary_font ${style_2 ? 'cs_color_1' : ''}`}>
                   <p>{item.title}</p>
@@ -56,7 +56,7 @@ const FunFactHomeOne = ({style_2, style_3} :any) => {
           )}
         </div>
       </div>
-      {style_3? null :  <div className="cs_height_150 cs_height_lg_60"></div>}     
+      {style_3 ? null : <div className="cs_height_150 cs_height_lg_60"></div>}
     </>
   );
 };

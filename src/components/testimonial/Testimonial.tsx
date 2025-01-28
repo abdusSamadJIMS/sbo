@@ -3,7 +3,10 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 
-import avatar_img from "@/assets/img/avatar_1.jpg";
+import agni from "@/assets/img/testimonials/agni.png";
+import ashish from "@/assets/img/testimonials/ashish.png";
+import mukul from "@/assets/img/testimonials/mukul.png";
+import nandan from "@/assets/img/testimonials/nandan.png";
 import testimonial_thumb from "@/assets/img/testimonial_thumb_1.jpg";
 import Image, { StaticImageData } from 'next/image';
 
@@ -16,22 +19,28 @@ interface DataType {
 }[]
 const testimonial_data: DataType[] = [
   {
-    img: avatar_img,
-    name: `Delores Olivo`,
-    location: `From UK`,
-    des: `“Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency”`,
+    img: mukul,
+    name: `Mukul Chhabra`,
+    location: `Founder Scrap Uncle`,
+    des: `“Partnering with Small Box Office has been a game changer for Scrap Uncle. Their creativity and professionalism have significantly boosted our engagement and reach. SBO's consistent high-quality content has truly amplified our brand's message!”`,
   },
   {
-    img: avatar_img,
-    name: `Delores Olivo`,
-    location: `From USA`,
-    des: `“Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency”`,
+    img: nandan,
+    name: `Nandan Bhat`,
+    location: `Founder Ecokaari`,
+    des: `“Working with Small Box Office has been a fantastic experience. Their team has expertly managed EcoKaari's social media, bringing creativity and professionalism to our online presence. Highly recommend their services!”`,
   },
   {
-    img: avatar_img,
-    name: `Delores Olivo`,
-    location: `From Astrolia`,
-    des: `“Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency”`,
+    img: ashish,
+    name: `Ashish Jain`,
+    location: `Founder IPCA`,
+    des: `“Mr. Anuj Ramatri and his team have truly understood our vision and mission. SBO provides comprehensive solutions, from project shoots to script development and creating innovative ideas that align with our work. We highly recommend SBO to anyone who is looking to elevate their social media presence.”`,
+  },
+  {
+    img: agni,
+    name: `Agni Mitra`,
+    location: `Founder Amwoodo`,
+    des: `“We are thrilled with the exceptional service provided by Small Box Office. Their timely delivery, seamless cooperation with our in-house marketing team, and proactive participation in meetings to ensure alignment have been invaluable. ”`,
   },
 ]
 
@@ -70,7 +79,7 @@ const Testimonial = ({ style_service }: any) => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-4">
-              <div>
+              <div className=''>
                 <Image src={testimonial_thumb} alt="" className="w-100" />
               </div>
             </div>
@@ -97,10 +106,10 @@ const Testimonial = ({ style_service }: any) => {
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M0 26.2855H12.9844L4.32807 43.4283H17.3125L25.9689 26.2855V0.571289H0V26.2855Z"
-                              fill="#FF6B00" />
+                              fill="#fd12a5" />
                             <path
                               d="M34.625 0.571289V26.2855H47.6094L38.9531 43.4283H51.9375L60.5939 26.2855V0.571289H34.625Z"
-                              fill="#FF6B00" />
+                              fill="#fd12a5" />
                           </svg>
                         </div>
                         <blockquote className="cs_testimonial_text">

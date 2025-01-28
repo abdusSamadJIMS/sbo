@@ -2,7 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import footer_logo from "@/assets/img/footer_logo.svg";
+import footer_logo from "@/assets/img/sboLogo.png";
 import { CopyRight, SocialLinks } from '@/components/common/SocialLinks';
 
 interface DataType {
@@ -17,10 +17,10 @@ interface DataType {
 }
 
 const footer_data: DataType = {
-  email: `info@email.com`,
-  phone: `(406) 555-0120`,
-  location: `46 JOHN ST TORONTO ON M5V 3W2`,
-  footer_info: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development.`,
+  email: `support@smallboxoffice.com`,
+  phone: `+91 767 851 5175`,
+  location: `212, Shahpur Jat, Hauz Khas, Delhi - 110049`,
+  footer_info: `We help businesses like yours thrive online. From web design & development to SEO, digital marketing, video production, scriptwriting, social media management, and photography, we deliver tailored solutions to ensure success in the digital world.`,
   links: [
     { title: `HOME`, link: "/" },
     { title: `ABOUT`, link: "/about" },

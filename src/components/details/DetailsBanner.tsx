@@ -8,7 +8,7 @@ import service_slider_2 from "@/assets/img/service_slider_2.jpg";
 const DetailsBanner = () => {
   return (
     <>
-      <div className="cs_height_150 cs_height_lg_60"></div> 
+      <div className="cs_height_150 cs_height_lg_60"></div>
       <div className="container">
         <div className="d-flex gap-2 gap-md-5">
           <div>
@@ -17,8 +17,9 @@ const DetailsBanner = () => {
           <div>
             <Image src={service_slider_2} alt="image-here" />
           </div>
+
         </div>
-      </div> 
+      </div>
     </>
   );
 };

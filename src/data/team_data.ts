@@ -1,11 +1,10 @@
-import team_avatar_1 from "@/assets/img/teamsimg1.jpg";
-import team_avatar_2 from "@/assets/img/teamsimg2.jpg";
-import team_avatar_3 from "@/assets/img/teamsimg3.jpg";
-import team_avatar_4 from "@/assets/img/teamsimg4.jpg";
-import team_avatar_5 from "@/assets/img/teamsimg5.jpg";
-import team_avatar_6 from "@/assets/img/teamsimg6.jpg";
-import team_avatar_7 from "@/assets/img/teamsimg7.jpg";
-import team_avatar_8 from "@/assets/img/teamsimg8.jpg";
+import sushil from "@/assets/img/teamMember/sushil.png";
+import muskan from "@/assets/img/teamMember/muskan.png";
+import gautam from "@/assets/img/teamMember/gautam.png";
+import aarushi from "@/assets/img/teamMember/aarushi.png";
+import anuj from "@/assets/img/teamMember/anuj.png";
+import aniket from "@/assets/img/teamMember/aniket.png";
+
 
 import { StaticImageData } from "next/image";
 
@@ -20,52 +19,52 @@ interface DataType {
 const team_data: DataType[] = [
 	{
 		id: 1,
-		img: team_avatar_1,
-		avatar_name: "Bruce Stewart",
-		designation: "PHP Developer",
+		img: sushil,
+		avatar_name: "Sushil Something",
+		designation: "Graphics Designer",
 	},
 	{
 		id: 2,
-		img: team_avatar_2,
-		avatar_name: "Joseph Whorton",
-		designation: "UI/UX Designer",
+		img: muskan,
+		avatar_name: "Muskan Something",
+		designation: "Script Writer",
 	},
 	{
 		id: 3,
-		img: team_avatar_3,
-		avatar_name: "Gregory Terrell",
-		designation: "Web Developer",
+		img: gautam,
+		avatar_name: "Gautam Something",
+		designation: "Video Editor",
 	},
 	{
 		id: 4,
-		img: team_avatar_4,
-		avatar_name: "Andrew Lopenza",
-		designation: "UX Sketch Designer",
+		img: aniket,
+		avatar_name: "Chirag Something",
+		designation: "Performance Marketer",
 	},
 	// team data
 	{
 		id: 5,
-		img: team_avatar_5,
-		avatar_name: "Bruce Stewart",
-		designation: "PHP Developer",
+		img: anuj,
+		avatar_name: "Anuj Something",
+		designation: "Video Editor",
 	},
 	{
 		id: 6,
-		img: team_avatar_6,
-		avatar_name: "Joseph Whorton",
-		designation: "UI/UX Designer",
+		img: aniket,
+		avatar_name: "Aniket Choudhary",
+		designation: "Video Editor",
 	},
 	{
 		id: 7,
-		img: team_avatar_7,
-		avatar_name: "Gregory Terrell",
+		img: aniket,
+		avatar_name: "Abdus Samad",
 		designation: "Web Developer",
 	},
 	{
 		id: 8,
-		img: team_avatar_8,
-		avatar_name: "Andrew Lopenza",
-		designation: "UX Sketch Designer",
+		img: muskan,
+		avatar_name: "Harsimar Something",
+		designation: "Film Assistant Director",
 	},
 ];
 

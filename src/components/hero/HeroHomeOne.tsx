@@ -1,12 +1,14 @@
 
-'use client' 
+'use client'
 import Link from 'next/link';
 import React from 'react';
+import img from "@/assets/img/heroImage/h1.jpg"
 import { Swiper, SwiperSlide } from "swiper/react";
+import { StaticImageData } from 'next/image';
 
 
 interface DataType {
-  img: string;
+  img: StaticImageData;
   sub_title: string;
   title: string;
   des: string;
@@ -14,23 +16,18 @@ interface DataType {
 
 const hero_slider: DataType[] = [
   {
-    img: `/assets/img/hero_img_1.jpg`,
-    sub_title: "Creative Agency",
-    title: "Expert Digital Services for Your Own Business",
-    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`
+    img,
+    sub_title: "Digital Marketing Agency",
+    title: "Creative Solutions to Fuel Your Business Growth",
+    des: `Welcome to our creative agency! We specialize in empowering businesses like yours to thrive in the digital age. From SEO and web development to video production, scriptwriting, digital marketing, social media management, and photography, we offer a complete range of services to enhance your brand’s online presence. Let us help you stand out in the ever-evolving digital landscape.`
   },
   {
-    img: `/assets/img/hero_img_1.jpg`,
+    img,
     sub_title: "Creative Agency",
     title: "Expert Digital Services for Your Own Business",
     des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`
   },
-  {
-    img: `/assets/img/hero_img_1.jpg`,
-    sub_title: "Creative Agency",
-    title: "Expert Digital Services for Your Own Business",
-    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`
-  },
+
 ]
 
 
@@ -46,7 +43,7 @@ const HeroHomeOne = () => {
         {hero_slider.map((item, index) =>
           <SwiperSlide key={index} className="swiper-slide">
             <div className="cs_hero cs_style1 cs_center cs_parallax">
-              <div className="cs_hero_bg cs_bg cs_parallax_bg" style={{ backgroundImage: `url(${item.img})` }}></div>
+              <div className="cs_hero_bg cs_bg cs_parallax_bg" style={{ backgroundImage: `url(${item.img.src})` }}></div>
               <div className="container">
                 <div className="cs_hero_text">
                   <div className="cs_hero_mini_title">

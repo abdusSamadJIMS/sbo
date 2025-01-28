@@ -69,14 +69,14 @@ const ContactArea = () => {
             <div className="cs_contact_section_2 anim_div_ShowRightSide">
               <div className="cs_google_map cs_bg" data-src="assets/img/map_img.png">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96652.27317354927!2d-74.33557928194516!3d40.79756494697628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a82f1352d0dd%3A0x81d4f72c4435aab5!2sTroy+Meadows+Wetlands!5e0!3m2!1sen!2sbd!4v1563075599994!5m2!1sen!2sbd"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.7479731675216!2d77.21094997500519!3d28.54729408794719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce300740f6fc5%3A0xc1e6314d0af3219f!2sSmall%20box%20office!5e0!3m2!1sen!2sin!4v1738065331062!5m2!1sen!2sin"
                   allowFullScreen={true}></iframe>
               </div>
               <div className="cs_height_50 cs_height_lg_50"></div>
               <div className="row">
                 <div className="col-md-4">
                   <div className="cs_icon">
-                    <a href="https://www.google.com/maps" className="cs_icon_style">
+                    <a href="https://maps.app.goo.gl/gHLzax6dc3FiJWxc6" className="cs_icon_style">
                       <i>
                         <svg width="14" height="19" viewBox="0 0 14 19" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -88,7 +88,7 @@ const ContactArea = () => {
                     </a>
                     <div className="cs_icon_text">
                       <h6 className="cs_icon_title">Address</h6>
-                      <p className="cs_icon_subtitle">El-Mahalla El-Kubra 37</p>
+                      <p className="cs_icon_subtitle">212, Shahpur Jat, Hauz Khas, Delhi 110049</p>
                     </div>
                   </div>
                 </div>
@@ -112,13 +112,13 @@ const ContactArea = () => {
                     </a>
                     <div className="cs_icon_text">
                       <h6 className="cs_icon_title">Phone</h6>
-                      <p className="cs_icon_subtitle">(406) 555-0120</p>
+                      <p className="cs_icon_subtitle">+91 767 851 5175</p>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-4">
                   <div className="cs_icon">
-                    <a href="mailto:vixan@email.com" className="cs_icon_style">
+                    <a href="mailto:support@smallboxoffice.com" className="cs_icon_style">
                       <i>
                         <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -133,7 +133,7 @@ const ContactArea = () => {
                     </a>
                     <div className="cs_icon_text">
                       <h6 className="cs_icon_title">Email</h6>
-                      <p className="cs_icon_subtitle">vixan@email.com</p>
+                      <p className="cs_icon_subtitle">support@smallboxoffice.com</p>
                     </div>
                   </div>
                 </div>

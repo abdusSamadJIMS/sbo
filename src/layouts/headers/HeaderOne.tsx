@@ -7,8 +7,8 @@ import React, { useEffect, useState } from "react";
 
 
 import Image from "next/image";
-import logo from "@/assets/img/logo.svg";
-import Logo_white from "@/assets/img/Logo_white.png";
+import logo from "@/assets/img/logoWithoutName.png";
+import Logo_white from "@/assets/img/logoWithoutName.png";
 
 interface DataType {
 	id: number;
@@ -38,82 +38,49 @@ const menu_data: DataType[] = [
 	},
 	{
 		id: 3,
-		title: "Pages",
-		link: "/about",
-		has_dropdown: true,
-		sub_menu: [
-			{
-				id: 1,
-				title: "About",
-				link: "/about",
-			},
-			{
-				id: 2,
-				title: "Team",
-				link: "/team",
-			},
-			{
-				id: 3,
-				title: "Team Details",
-				link: "/team-details",
-			},
-			{
-				id: 4,
-				title: "Contact",
-				link: "/contact",
-			},
-			{
-				id: 5,
-				title: "Faq",
-				link: "/faq",
-			},
-			{
-				id: 6,
-				title: "Error",
-				link: "/error",
-			}
-		]
-	},
-	{
-		id: 4,
 		title: "Services",
 		link: "/service",
 		has_dropdown: true,
 		sub_menu: [
 			{
 				id: 1,
-				title: "Shooting",
-				link: "/shooting",
+				title: "SEO Services",
+				link: "/seo",
 			},
 			{
 				id: 2,
-				title: "Video Editing",
-				link: "/video-editing",
+				title: "Web Development",
+				link: "/web-development",
 			},
 			{
 				id: 3,
-				title: "Script Writing",
-				link: "/script-writing",
+				title: "Digital Marketing",
+				link: "/digital-marketing",
 			},
 			{
 				id: 4,
-				title: "Graphic Designing",
-				link: "/Social Media Management",
+				title: "Video Production",
+				link: "/video-production",
 			},
 			{
 				id: 5,
+				title: "Scriptwriting",
+				link: "/scriptwriting",
+			},
+			{
+				id: 6,
+				title: "Social Media Management",
+				link: "/social-media-management",
+			},
+			{
+				id: 7,
+				title: "Photography",
+				link: "/photography",
+			},
+			{
+				id: 8,
 				title: "Performance Marketing",
-				link: "/video-editing",
-			},
-			{
-				id: 6,
-				title: "Search Engine Optimization",
-				link: "/search-engine-optimization",
-			},
-			{
-				id: 6,
-				title: "Web Development",
-				link: "/web-development",
+				link: "/performance-marketing",
 			},
 			{
 				id: 6,
@@ -123,10 +90,10 @@ const menu_data: DataType[] = [
 		]
 	},
 	{
-		id: 5,
+		id: 4,
 		title: "Portfolio",
 		link: "/portfolio",
-		has_dropdown: true,
+		has_dropdown: false,
 		sub_menu: [
 			{
 				id: 1,
@@ -141,10 +108,17 @@ const menu_data: DataType[] = [
 		]
 	},
 	{
+		id: 5,
+		title: "Team",
+		link: "/team",
+
+		has_dropdown: false,
+	},
+	{
 		id: 6,
 		title: "Blog",
 		link: "/blog",
-		has_dropdown: true,
+		has_dropdown: false,
 		sub_menu: [
 			{
 				id: 1,
@@ -238,10 +212,11 @@ const HeaderOne = () => {
 						<div className="cs_main_header_in">
 							<div className="cs_main_header_left">
 								<Link className="cs_site_branding logo-dark" href="/">
-									<Image src={logo} alt="Logo" />
+									<Image src={logo} alt="Logo" width={45} height={45} />
+
 								</Link>
 								<Link className="cs_site_branding logo-white" href="/">
-									<Image src={Logo_white} alt="Logo" />
+									<Image src={Logo_white} alt="Logo" height={50} width={50} />
 								</Link>
 							</div>
 							<div className="cs_main_header_right">
@@ -270,8 +245,8 @@ const HeaderOne = () => {
 				<button className="cs_close" onClick={handleActive}></button>
 				<div className="cs_side_header_overlay"></div>
 				<div className="cs_side_header_in">
-					<Link className="cs_site_branding" href="/">
-						<Image src={Logo_white} alt="Logo" />
+					<Link className="pb-10" href="/">
+						<Image src={logo} alt="Logo" width={50} height={50} />
 					</Link>
 					<div className="row align-items-end">
 						<div className="col-7">
@@ -309,12 +284,12 @@ const HeaderOne = () => {
 												d="M7 0.0195312C3.14027 0.0195312 0 3.01027 0 6.68621C0 7.78973 0.289693 8.88387 0.840408 9.85434L6.6172 17.8047C6.69411 17.9373 6.84065 18.0195 7 18.0195C7.15935 18.0195 7.30589 17.9373 7.3828 17.8047L13.1617 9.85105C13.7103 8.88387 14 7.78969 14 6.68617C14 3.01027 10.8597 0.0195312 7 0.0195312ZM7 10.0195C5.07014 10.0195 3.50002 8.52418 3.50002 6.68621C3.50002 4.84824 5.07014 3.35289 7 3.35289C8.92986 3.35289 10.5 4.84824 10.5 6.68621C10.5 8.52418 8.92986 10.0195 7 10.0195Z"
 												fill="white"></path>
 										</svg>
-										<span className="ms-2">46 JOHN ST TORONTO ON <br />
-											&nbsp; &nbsp; &nbsp; &nbsp; M5V 3W2</span>
+										<span className="ms-2">212, Shahpur Jat, Hauz Khas <br />
+											&nbsp; &nbsp; &nbsp; &nbsp; Delhi - 110049</span>
 									</p>
 
 									<h4 className="cs_phone_number">
-										<a href="tel:(406)555-0120">
+										<a href="tel:917678515175">
 											<svg width="35" height="35" viewBox="0 0 18 19" fill="none"
 												xmlns="http://www.w3.org/2000/svg">
 												<path
@@ -326,20 +301,21 @@ const HeaderOne = () => {
 												<path
 													d="M15.1294 2.93344C13.5338 1.33791 11.5151 0.330398 9.28656 0.0195312L9.0918 1.40907C11.0169 1.67874 12.7623 2.55141 14.1406 3.92597C15.4477 5.23311 16.3054 6.88483 16.6163 8.70134L17.9983 8.46538C17.635 6.36047 16.6425 4.45033 15.1294 2.93344Z"
 													fill="white"></path>
-											</svg><span className="ms-2">(406)555-0120</span></a>
+											</svg><span className="ms-2" >+91 767 851 5175</span></a>
 									</h4>
 
 									<ul className="cs_social_link">
-										<li><a target="_blank" href="https://www.facebook.com/">Facebook</a></li>
-										<li><a target="_blank" href="https://www.linkedin.com/">Linkedin</a></li>
-										<li><a target="_blank" href="https://www.instagram.com/">Instagram</a></li>
-										<li><a target="_blank" href="https://dribbble.com/">Dribbble</a></li>
+										<li><a target="_blank" href="https://www.facebook.com/smallboxoffice/">Facebook</a></li>
+										<li><a target="_blank" href="https://in.linkedin.com/company/small-box-office">Linkedin</a></li>
+										<li><a target="_blank" href="https://www.instagram.com/smallboxoffice">Instagram</a></li>
+										<li><a target="_blank" href="https://x.com/smallboxoffice">Twitter</a></li>
+										{/* <li><a target="_blank" href="https://www.youtube.com/channel/UCB4Z5BqPElRUPLUSu73XakA">YouTube</a></li> */}
 									</ul>
 
 									<hr className="mt-2 me-5 mb-2" />
 									<h2>
-										<a href="mailto:info@email.com" className="cs_primary_font cs_text_btn"><span
-											className="cs_black">info@email.com</span></a>
+										<a href="mailto:support@smallboxoffice.com" style={{ fontSize: "1.5rem" }} className="cs_primary_font cs_text_btn"><span
+											className="cs_black">support@smallboxoffice.com</span></a>
 									</h2>
 								</div>
 							</div>

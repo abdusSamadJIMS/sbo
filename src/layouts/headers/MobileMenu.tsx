@@ -23,8 +23,7 @@ const menu_data: DataType[] = [
     id: 1,
     title: "Home",
     link: "/",
-    has_dropdown: false,
-
+    has_dropdown: false
   },
   {
     id: 2,
@@ -34,82 +33,49 @@ const menu_data: DataType[] = [
   },
   {
     id: 3,
-    title: "Pages",
-    link: "/about",
-    has_dropdown: true,
-    sub_menu: [
-      {
-        id: 1,
-        title: "About",
-        link: "/about",
-      },
-      {
-        id: 2,
-        title: "Team",
-        link: "/team",
-      },
-      {
-        id: 3,
-        title: "Team Details",
-        link: "/team-details",
-      },
-      {
-        id: 4,
-        title: "Contact",
-        link: "/contact",
-      },
-      {
-        id: 5,
-        title: "Faq",
-        link: "/faq",
-      },
-      {
-        id: 6,
-        title: "Error",
-        link: "/error",
-      }
-    ]
-  },
-  {
-    id: 4,
     title: "Services",
     link: "/service",
     has_dropdown: true,
     sub_menu: [
       {
         id: 1,
-        title: "Shooting",
-        link: "/shooting",
+        title: "SEO Services",
+        link: "/seo",
       },
       {
         id: 2,
-        title: "Video Editing",
-        link: "/video-editing",
+        title: "Web Development",
+        link: "/web-development",
       },
       {
         id: 3,
-        title: "Script Writing",
-        link: "/script-writing",
+        title: "Digital Marketing",
+        link: "/digital-marketing",
       },
       {
         id: 4,
-        title: "Graphic Designing",
-        link: "/Social Media Management",
+        title: "Video Production",
+        link: "/video-production",
       },
       {
         id: 5,
+        title: "Scriptwriting",
+        link: "/scriptwriting",
+      },
+      {
+        id: 6,
+        title: "Social Media Management",
+        link: "/social-media-management",
+      },
+      {
+        id: 7,
+        title: "Photography",
+        link: "/photography",
+      },
+      {
+        id: 8,
         title: "Performance Marketing",
-        link: "/video-editing",
-      },
-      {
-        id: 6,
-        title: "Search Engine Optimization",
-        link: "/search-engine-optimization",
-      },
-      {
-        id: 6,
-        title: "Web Development",
-        link: "/web-development",
+        link: "/performance-marketing",
       },
       {
         id: 6,
@@ -119,10 +85,10 @@ const menu_data: DataType[] = [
     ]
   },
   {
-    id: 5,
+    id: 4,
     title: "Portfolio",
     link: "/portfolio",
-    has_dropdown: true,
+    has_dropdown: false,
     sub_menu: [
       {
         id: 1,
@@ -137,10 +103,17 @@ const menu_data: DataType[] = [
     ]
   },
   {
+    id: 5,
+    title: "Team",
+    link: "/team",
+
+    has_dropdown: false,
+  },
+  {
     id: 6,
     title: "Blog",
     link: "/blog",
-    has_dropdown: true,
+    has_dropdown: false,
     sub_menu: [
       {
         id: 1,

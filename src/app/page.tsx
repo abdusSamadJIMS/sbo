@@ -18,6 +18,9 @@ import BrandHomeOne from '@/components/brand/BrandHomeOne';
 import FooterOne from '@/layouts/footers/FooterOne';
 import Wrapper from '@/layouts/Wrapper';
 import VideoPopup from '@/components/modals/VideoPopup';
+import PortfolioHomeThree from '@/components/portfolio/PortfolioHomeThree';
+import PortfolioHomeFour from '@/components/portfolio/PortfolioHomeFour';
+import PortfolioHomeFive from '@/components/portfolio/PortfolioHomeFive';
 
 
 
@@ -36,7 +39,7 @@ const index = () => {
             <AboutHomeOne />
             <ServiceHomeOne />
             <PortfolioHomeOne />
-            <AwardsHomeOne />
+            {/* <AwardsHomeOne /> */}
             <Testimonial />
             <FunFactHomeOne />
             <VideoHomeOne setIsVideoOpen={setIsVideoOpen} />

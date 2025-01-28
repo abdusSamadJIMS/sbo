@@ -26,8 +26,18 @@
     }
     .cs_testimonial_avatar {
         width: 80px;
+        height: 80px;
         margin-right: 25px;
         flex: none;
+        border-radius: 50px;    
+        position: relative;
+    }
+    .cs_testimonial_avatar img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50px;
     }
     .cs_testimonial_avatar_name {
         font-size: 22px;

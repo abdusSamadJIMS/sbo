@@ -11,22 +11,22 @@ const service_data: DataType[] = [
   {
     id: 'one',
     title: "Understand",
-    description: `Welcome to our digital agency We specialize in helping your business most`,
+    description: `We start by understanding your business, audience, and goals. Through in-depth discussions and research, we identify your unique needs to craft a strategy that aligns with your vision.`,
   },
   {
     id: 'Two',
     title: "Design",
-    description: `Welcome to our digital agency We specialize in helping your business most`,
+    description: `Our creative team brings your ideas to life by designing user-friendly, visually appealing, and engaging layouts that reflect your brand's identity and captivate your audience.`,
   },
   {
     id: 'Three',
     title: "Development",
-    description: `Welcome to our digital agency We specialize in helping your business most`,
+    description: `With a focus on functionality and performance, we transform the designs into fully functional solutions, ensuring seamless user experiences across all devices and platforms.`,
   },
   {
     id: 'Four',
     title: "Testing",
-    description: `Welcome to our digital agency We specialize in helping your business most`,
+    description: `Before launch, we rigorously test every aspect of your project to ensure it runs smoothly. From performance to usability, we leave no detail unchecked, delivering a polished and reliable solution.`,
   },
 ]
 const Service = () => {

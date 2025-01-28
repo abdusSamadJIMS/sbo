@@ -1,4 +1,4 @@
- 
+
 
 import React from 'react';
 import agency_story_1 from "@/assets/img/agency_story_1.jpg"
@@ -15,8 +15,8 @@ interface DataType {
 }
 const about_content: DataType = {
   subtitle: `Our Agency Story`,
-  title: `How Our Agency is Pushing the Boundaries of Online Marketing and Design`,
-  des: `Digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital to drive growth and reach your goals.`,
+  title: `How Our Agency Redefines Digital Marketing and Creative Solutions`,
+  des: `Digital Agency! We specialize in empowering businesses like yours to thrive in the digital landscape. From website design and development to digital marketing, advertising, and creative solutions, we have the expertise to elevate your online presence. Let us help you navigate the ever-evolving digital world to drive growth and achieve your goals.`,
 }
 const { subtitle, title, des } = about_content
 

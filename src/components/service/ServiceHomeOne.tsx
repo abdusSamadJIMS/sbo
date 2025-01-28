@@ -7,30 +7,66 @@ interface DataType {
   id: number;
   title: string;
   des: string;
+  link: string;
 }[]
 
 const service_data: DataType[] = [
   {
     id: 1,
-    title: `Application Development`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    title: "SEO Services",
+    link: "/seo",
+
+    des: "Boost your online visibility with expert SEO strategies. We optimize your website for search engines to ensure your business ranks higher, driving more traffic and improving your online presence.",
   },
   {
     id: 2,
-    title: `Web Development`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    title: "Web Development",
+    link: "/web-development",
+
+    des: "Create stunning, user-friendly websites tailored to your brand's identity. Our web development services ensure a seamless and engaging online experience for your customers, driving growth and success.",
   },
   {
     id: 3,
-    title: `Digital Services`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    title: "Digital Marketing",
+    link: "/digital-marketing",
+
+    des: "Reach your target audience with our customized digital marketing campaigns. We use data-driven strategies to help you connect with your audience, increase conversions, and build brand loyalty.",
   },
   {
     id: 4,
-    title: `Digital Product Design`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
-  },
+    title: "Video Production",
+    link: "/video-production",
 
+    des: "Tell your story with high-quality videos that captivate your audience. We manage the entire process from concept to production, helping you communicate your message effectively through visuals.",
+  },
+  {
+    id: 5,
+    title: "Scriptwriting Services",
+    link: "/scriptwriting",
+
+    des: "Craft compelling scripts that bring your ideas to life. Our expert scriptwriters help you deliver your message with clarity and creativity, ensuring your content resonates with your target audience.",
+  },
+  {
+    id: 6,
+    title: "Social Media Management",
+    link: "/social-media-management",
+
+    des: "Elevate your social media presence with expert management services. We create engaging content, plan strategic campaigns, and build your community to keep your audience connected and engaged.",
+  },
+  {
+    id: 7,
+    title: "Photography Services",
+    link: "/photography",
+
+    des: "Capture the essence of your brand with professional photography. We provide high-quality images that showcase your products and services, helping you create a lasting impression on your audience.",
+  },
+  {
+    id: 8,
+    title: "Performance Marketing",
+    link: "/performance-marketing",
+
+    des: "Maximize your ROI with performance-driven marketing strategies. We focus on measurable results, utilizing channels like paid search, display advertising, and affiliate marketing to drive sales and conversions.",
+  },
 ]
 
 const ServiceHomeOne = () => {
@@ -46,7 +82,7 @@ const ServiceHomeOne = () => {
                 Our Services
               </div>
               <h2 className="cs_section_title anim_heading_title">
-                Comprehensive Digital Strategy Transformation
+                Complete Creative & Digital Solutions
               </h2>
             </div>
             <div className="cs_section_heading_right cs_btn_anim">
@@ -73,7 +109,7 @@ const ServiceHomeOne = () => {
                 <div className="cs_card_right">
                   <div className="cs_card_right_in">
                     <h2 className="cs_card_title">
-                      <Link href="/service-details">{item.title}</Link>
+                      <Link href={item.link}>{item.title}</Link>
                     </h2>
                     <div className="cs_card_subtitle">
                       {item.des}
@@ -81,7 +117,7 @@ const ServiceHomeOne = () => {
                   </div>
                 </div>
                 <div className="cs_card_link_wrap">
-                  <Link href="/service-details" className="cs_card_link">
+                  <Link href={item.link} className="cs_card_link">
                     <span>
                       <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                         xmlns="http://www.w3.org/2000/svg">

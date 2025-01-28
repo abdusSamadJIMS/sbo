@@ -1,5 +1,5 @@
- 
- 'use client'
+
+'use client'
 
 
 import AboutHomeFour from '@/components/about/AboutHomeFour';
@@ -25,7 +25,7 @@ const index = () => {
           <main>
             <HeroService />
             <Service />
-            <Testimonial style_service={true} />
+            <Testimonial style_service={false} />
             <AboutHomeFour />
           </main>
           <FooterOne />

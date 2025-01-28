@@ -34,7 +34,7 @@ const index = () => {
             <FunFactHomeOne style_3={true} />
             <About />
             <TeamHomeTwo style_2={true} style_3={true} />
-            <AwardsHomeOne style_2={true} />
+            {/* <AwardsHomeOne style_2={true} /> */}
             <Testimonial />
             <Gellary style_2={true} />
             <BrandHomeOne />
@@ -43,8 +43,8 @@ const index = () => {
         </div>
       </div>
 
-        {/* video modal start */}
-        <VideoPopup
+      {/* video modal start */}
+      <VideoPopup
         isVideoOpen={isVideoOpen}
         setIsVideoOpen={setIsVideoOpen}
         videoId={"qmGYnJgCW1o"}

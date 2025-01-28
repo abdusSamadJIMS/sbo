@@ -14,20 +14,20 @@ const about_slider: DataType[] = [
   {
     img: "/assets/img/about_img.jpg",
     sub_title: "Our Mission",
-    title: `Unleashing Creativity to Transform Your Business`,
-    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`,
+    title: `Empowering Brands Through Innovation and Strategy`,
+    des: `At our agency, we believe every brand has the potential to shine. By blending innovative solutions with data-driven strategies, we help businesses unlock their true potential. From creating stunning websites to crafting impactful marketing campaigns, we’re here to empower your brand and drive meaningful growth in the digital landscape.`,
   },
   {
     img: "/assets/img/about_img.jpg",
     sub_title: "Our Mission",
-    title: `Unleashing Creativity to Transform Your Business`,
-    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`,
+    title: `Delivering Tailored Digital Solutions to Elevate Your Brand`,
+    des: `We understand that every business is unique. That’s why we focus on delivering customized digital solutions designed to fit your specific goals. Whether it’s enhancing your online visibility through SEO, managing your social media, or producing captivating videos, our team is dedicated to elevating your brand and ensuring lasting success.`,
   },
   {
     img: "/assets/img/about_img.jpg",
     sub_title: "Our Mission",
-    title: `Unleashing Creativity to Transform Your Business`,
-    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`,
+    title: `Turning Ideas Into Impactful Experiences`,
+    des: `Our mission is to transform your vision into experiences that resonate with your audience. Through creative storytelling, professional video production, and strategic digital marketing, we craft compelling content that leaves a lasting impression. Let us bring your ideas to life and connect your brand with the people who matter most.`,
   },
 ]
 
