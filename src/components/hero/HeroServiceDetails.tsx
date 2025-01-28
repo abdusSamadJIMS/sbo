@@ -9,7 +9,7 @@ import performanceImage from '@/assets/img/services/performance.jpg';
 import photoImage from '@/assets/img/services/photography.jpg';
 import scriptImage from '@/assets/img/services/scriptWriting.jpg';
 import videoImage from '@/assets/img/services/videoProduction.jpg';
-import socialImage from '@/assets/img/services/socialMedia.jpg';
+import socialImage from '@/assets/img/services/scriptWriting.jpg';
 
 
 interface HeroContent {

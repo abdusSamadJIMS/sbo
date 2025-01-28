@@ -273,8 +273,8 @@ const ServiceDetailsFaq = ({ selectedService }: { selectedService: string }) => 
     service.label.toLowerCase().replace(/\s+/g, '') !== selectedService.toLowerCase()
   );
 
-  console.log(services[2].label.toLowerCase().replace(/\s+/g, ''))
-  console.log(selectedService)
+  // console.log(services[2].label.toLowerCase().replace(/\s+/g, ''))
+  // console.log(selectedService)
 
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
