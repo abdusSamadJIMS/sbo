@@ -48,6 +48,7 @@ const ContactForm = () => {
     if (!state.success) {
         return (
             <form
+                className='contact_form'
                 ref={formRef}
                 action={(f) => {
                     formAction(f);
