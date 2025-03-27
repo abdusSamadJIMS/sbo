@@ -42,12 +42,23 @@ const services = [
 const ContactForm = () => {
     const [state, formAction] = useFormState(newContactFromEntry, initialState);
     const formRef = React.useRef<HTMLFormElement>(null);
+    const router = useRouter()
 
+    useEffect(() => {
+        if (state.success) {
+            router.push("/thankyou")
+        }
+
+        // return () => {
+        //     second
+        // }
+    }, [router, state.success])
 
 
     if (!state.success) {
         return (
             <form
+                id='contact_form'
                 className='contact_form'
                 ref={formRef}
                 action={(f) => {

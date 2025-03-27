@@ -1,28 +1,28 @@
-// "use client"
+"use client"
 
-// import { useEffect, useState } from "react"
-// import { useRouter } from "next/navigation"
+import { useEffect, useState } from "react"
+import { useRouter } from "next/navigation"
 import Link from "next/link"
 import styles from "./thankyou.module.css"
 
 export default function ThankYouPage() {
-    // const router = useRouter()
-    // const [countdown, setCountdown] = useState(15)
+    const router = useRouter()
+    const [countdown, setCountdown] = useState(4)
 
-    // useEffect(() => {
-    //     const timer = setInterval(() => {
-    //         setCountdown(prev => {
-    //             if (prev <= 1) {
-    //                 clearInterval(timer)
-    //                 router.push("/")
-    //                 return 0
-    //             }
-    //             return prev - 1
-    //         })
-    //     }, 1000)
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCountdown(prev => {
+                if (prev <= 1) {
+                    clearInterval(timer)
+                    router.push("/")
+                    return 0
+                }
+                return prev - 1
+            })
+        }, 1000)
 
-    //     return () => clearInterval(timer) // Cleanup on unmount
-    // }, [router])
+        return () => clearInterval(timer) // Cleanup on unmount
+    }, [router])
 
     return (
         <div className={styles.container}>
