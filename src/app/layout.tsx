@@ -3,6 +3,10 @@ import AutoModal from "@/components/ui/auto-modal";
 import "@/styles/index.scss";
 import { Metadata } from "next";
 import { GoogleTagManager } from "@next/third-parties/google"
+import Analytics from "@/components/analytics";
+import dynamic from "next/dynamic";
+import Analytics2 from "@/components/Analytics2";
+const PixelTracker = dynamic(() => import("@/components/pixel-tracker"), { ssr: false });
 
 export const metadata: Metadata = {
   title: 'Small Box Office',
@@ -20,6 +24,7 @@ export default function RootLayout({
       <GoogleTagManager gtmId="GTM-PT76GSW8" />
 
       <head>
+        <Analytics2 />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;900&family=Kanit:wght@400;500;600;700&display=swap"
@@ -27,14 +32,7 @@ export default function RootLayout({
       </head>
       <AutoModal />
       <body>
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GRM-PT76GSW8"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
+        <Analytics />
         {children}</body>
     </html>
   );
