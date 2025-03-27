@@ -23,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <GoogleTagManager gtmId="GTM-PT76GSW8" />
 
+
       <head>
         <Analytics2 />
         <link
@@ -32,6 +33,7 @@ export default function RootLayout({
       </head>
       <AutoModal />
       <body>
+
         <Analytics />
         {children}</body>
     </html>
