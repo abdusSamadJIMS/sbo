@@ -17,13 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-PT76GSW8" />
+
       <head>
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;900&family=Kanit:wght@400;500;600;700&display=swap"
         />
       </head>
-      <GoogleTagManager gtmId="GTM-PT76GSW8" />
       <AutoModal />
       <body>
         <noscript>
