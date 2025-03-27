@@ -43,7 +43,7 @@ const index = () => {
             <Testimonial />
             <FunFactHomeOne />
             <VideoHomeOne setIsVideoOpen={setIsVideoOpen} />
-            <BlogHomeOne />
+            {/* <BlogHomeOne /> */}
             <SubscribeHomeOne />
             <BrandHomeOne style_2={false} />
           </main>

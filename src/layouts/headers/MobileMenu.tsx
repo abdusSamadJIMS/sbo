@@ -77,11 +77,11 @@ const menu_data: DataType[] = [
         title: "Performance Marketing",
         link: "/performance-marketing",
       },
-      {
-        id: 6,
-        title: "Service Detail",
-        link: "/service-detail",
-      },
+      // {
+      //   id: 6,
+      //   title: "Service Detail",
+      //   link: "/service-detail",
+      // },
     ]
   },
   {
@@ -109,24 +109,24 @@ const menu_data: DataType[] = [
 
   //   has_dropdown: false,
   // },
-  {
-    id: 6,
-    title: "Blog",
-    link: "/blog",
-    has_dropdown: false,
-    sub_menu: [
-      {
-        id: 1,
-        title: "Blog",
-        link: "/blog",
-      },
-      {
-        id: 2,
-        title: "Blog Details",
-        link: "/blog-details",
-      }
-    ]
-  },
+  // {
+  //   id: 6,
+  //   title: "Blog",
+  //   link: "/blog",
+  //   has_dropdown: false,
+  //   sub_menu: [
+  //     {
+  //       id: 1,
+  //       title: "Blog",
+  //       link: "/blog",
+  //     },
+  //     {
+  //       id: 2,
+  //       title: "Blog Details",
+  //       link: "/blog-details",
+  //     }
+  //   ]
+  // },
   {
     id: 7,
     title: "Contact",

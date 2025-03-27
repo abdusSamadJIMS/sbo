@@ -20,25 +20,25 @@ const team_data: DataType[] = [
 	{
 		id: 1,
 		img: sushil,
-		avatar_name: "Sushil Something",
+		avatar_name: "Sushil",
 		designation: "Graphics Designer",
 	},
 	{
 		id: 2,
 		img: muskan,
-		avatar_name: "Muskan Something",
+		avatar_name: "Muskan",
 		designation: "Script Writer",
 	},
 	{
 		id: 3,
 		img: gautam,
-		avatar_name: "Gautam Something",
+		avatar_name: "Gautam",
 		designation: "Video Editor",
 	},
 	{
 		id: 4,
 		img: aniket,
-		avatar_name: "Chirag Something",
+		avatar_name: "Anand",
 		designation: "Performance Marketer",
 	},
 	// team data

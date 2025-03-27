@@ -8,7 +8,7 @@ import gellary_img_3 from "@/assets/img/about_gallery_3.jpg";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 
- 
+
 const gellary_data = [
   gellary_img_1,
   gellary_img_2,
@@ -19,10 +19,12 @@ const gellary_data = [
 ]
 
 
-const Gellary = ({style_2}: any) => {
+const Gellary = ({ style_2 }: any) => {
+  // To be added
+  return null
   return (
     <>
-    {style_2 ? null : <div className="cs_height_150 cs_height_lg_60"></div>}      
+      {style_2 ? null : <div className="cs_height_150 cs_height_lg_60"></div>}
       <section>
         <div className="container">
           <div className="cs_section_heading cs_style_1 cs_type_1">
@@ -35,13 +37,15 @@ const Gellary = ({style_2}: any) => {
           </div>
           <div className="cs_height_150 cs_height_lg_60"></div>
         </div>
-        <Swiper 
-        loop={true}
-        speed={1000}
-        slidesPerView="auto"
-        spaceBetween={30}
-        pagination={{ el: ".cs_pagination", clickable: true }}
-        className="cs_slider cs_slider_6">
+
+
+        <Swiper
+          loop={true}
+          speed={1000}
+          slidesPerView="auto"
+          spaceBetween={30}
+          pagination={{ el: ".cs_pagination", clickable: true }}
+          className="cs_slider cs_slider_6">
           {gellary_data.map((item, i) => (
             <SwiperSlide key={i} className="swiper-slide">
               <Image src={item} className="card-img" alt="image-here" />
