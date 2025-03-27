@@ -2,7 +2,7 @@
 import AutoModal from "@/components/ui/auto-modal";
 import "@/styles/index.scss";
 import { Metadata } from "next";
-
+import { GoogleTagManager } from "@next/third-parties/google"
 
 export const metadata: Metadata = {
   title: 'Small Box Office',
@@ -23,6 +23,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;900&family=Kanit:wght@400;500;600;700&display=swap"
         />
       </head>
+      <GoogleTagManager gtmId="GTM-PT76GSW8" />
       <AutoModal />
       <body>{children}</body>
     </html>

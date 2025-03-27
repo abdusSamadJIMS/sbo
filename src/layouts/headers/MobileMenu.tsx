@@ -102,13 +102,13 @@ const menu_data: DataType[] = [
       }
     ]
   },
-  {
-    id: 5,
-    title: "Team",
-    link: "/team",
+  // {
+  //   id: 5,
+  //   title: "Team",
+  //   link: "/team",
 
-    has_dropdown: false,
-  },
+  //   has_dropdown: false,
+  // },
   {
     id: 6,
     title: "Blog",
@@ -149,8 +149,8 @@ const MobileMenu = ({ active, navTitle, openMobileMenu }: any) => {
             {menu.has_dropdown && (
               <>
                 <ul className="cs_mega_wrapper" style={{ display: navTitle === menu.title ? "block" : "none", }}>
-                  {menu.sub_menu?.map((subMenu) => (
-                    <li key={subMenu.id}>
+                  {menu.sub_menu?.map((subMenu, indx) => (
+                    <li key={indx + "sub"}>
                       <Link href={subMenu.link}>{subMenu.title}</Link>
                     </li>
                   ))}

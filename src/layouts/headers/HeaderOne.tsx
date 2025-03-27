@@ -107,13 +107,13 @@ const menu_data: DataType[] = [
 			}
 		]
 	},
-	{
-		id: 5,
-		title: "Team",
-		link: "/team",
+	// {
+	// 	id: 5,
+	// 	title: "Team",
+	// 	link: "/team",
 
-		has_dropdown: false,
-	},
+	// 	has_dropdown: false,
+	// },
 	{
 		id: 6,
 		title: "Blog",

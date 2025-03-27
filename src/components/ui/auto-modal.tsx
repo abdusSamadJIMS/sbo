@@ -1,9 +1,20 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import ContactForm from "../contact/ContactForm";
 
 const AutoModal = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const services = [
+        "Performance Marketing",
+        "Social Media Management",
+        "Website Development",
+        "Video Production (Reel)",
+        "Script Writing",
+        "Photography",
+        "Graphic Designing",
+        "Influencer Marketing"
+    ]
 
     useEffect(() => {
         const lastVisit = localStorage.getItem("modal_last_visit");
@@ -28,16 +39,20 @@ const AutoModal = () => {
                 <button
                     onClick={closeModal}
                     className="btn rounded-circle  "
-                    style={{ position: "absolute", right: "2.5rem", color: "var(--accent-color)", borderColor: "var(--accent-color)", zIndex: 10000 }}
+                    style={{ position: "absolute", right: "1rem", color: "var(--accent-color)", borderColor: "var(--accent-color)", zIndex: 10000 }}
                 >X</button>
+
                 <section>
-                    <div className="container">
+                    <div className="container "
+
+                    >
+
                         <div className="row">
                             <div className="">
 
                                 {/* <div className="cs_height_80 cs_height_lg_20"></div> */}
                                 <div className="cs_from anim_div_ShowDowns">
-                                    <form onClick={e => e.preventDefault()}>
+                                    {/* <form onClick={e => e.preventDefault()}>
                                         <div className="row">
                                             <div className="cs_field_group col">
                                                 <input className="cs_input_field" type="text" id="test1" placeholder="Name"
@@ -63,6 +78,21 @@ const AutoModal = () => {
                                                 <label htmlFor="test4" className="cs_input_label">Subject</label>
                                             </div>
                                         </div>
+                                        <div className="cs_field_group">
+                                            <select className="cs_input_field" id="test5"
+                                                name="test"
+                                                defaultValue={""}
+                                            >
+                                                <option value="">Select Service</option>
+                                                {
+                                                    services.map((service) => (
+                                                        <option key={service} value={service}
+                                                            style={{ "color": "black" }}
+                                                        >{service}</option>
+                                                    ))
+                                                }
+                                            </select>
+                                        </div>
                                         <div className="cs_height_100 cs_height_lg_60"></div>
                                         <div className="cs_field_group">
                                             <input className="cs_input_field" type="text" id="test5" placeholder="Message"
@@ -79,7 +109,8 @@ const AutoModal = () => {
                                                     fill="currentColor"></path>
                                             </svg>
                                         </button>
-                                    </form>
+                                    </form> */}
+                                    <ContactForm />
                                 </div>
                             </div>
                             <div className=" anim_div_ShowRightSide">
@@ -119,11 +150,13 @@ const styles: Record<string, React.CSSProperties> = {
         backgroundColor: 'var(--cr_banner-color)',
         borderRadius: "8px",
         width: "90%",
+        maxWidth: "600px",
         height: "80%",
         // maxWidth: "400px",
         padding: "20px",
         boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
         textAlign: "center",
+        position: "relative"
     },
 
 };
